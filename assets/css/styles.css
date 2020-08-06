@@ -1,3 +1,46 @@
+/*Global Rules*/
+body {
+  overflow-x: hidden;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  padding: 0;
+  background-color: transparent;
+  min-width: 100%;
+}
+
+.view-row {
+  height: 100vh;
+  max-width: 100%;
+  width: 100vw;
+  margin: 0;
+}
+/*Splash Page*/
+.splash-header {
+  height: 10vh;
+  margin-top: 5vh;
+}
+
+.splash-header > h1 {
+  font-family: Roboto;
+  text-align: center;
+  font-weight: normal;
+}
+
+.splash-header > hr {
+  height: 1.5px;
+  background-color: #bbbbbb;
+  margin: 2vh 10vw;
+}
+
+.my-photo {
+  width: 30vw;
+  height: 30vw;
+  margin-top: 10vh;
+  margin-left: 35%;
+  overflow: hidden;
+}
+
 .my-photo > img {
   width: 80vw;
   height: auto;
@@ -24,91 +67,9 @@
     opacity: 1;
   }
 }
-
-body {
-  overflow-x: hidden;
-}
-
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-  padding: 0;
-  background-color: transparent;
-  min-width: 100%;
-}
-
-.view-row {
-  height: 100vh;
-  max-width: 100%;
-  width: 100vw;
-  margin: 0;
-}
-
-.heading-text-carousel {
-  font-family: roboto;
-  font-style: normal;
-  font-size: 4vw;
-  margin: 5vh 0px;
-}
-
-.body-text-carousel {
-  font-size: 1.5vw;
-  margin: 2vw 1vw;
-  font-family: Maven Pro;
-}
-
-.carousel-item-next, .carousel-item-prev, .carousel-item.active {
-  height: 80vh;
-}
-
-.dueling-boxes {
-  background-color: #f2f2f2;
-  padding: 0vh 1vw;
-  height: 40vh;
-  margin: 1.25vh 0;
-}
-
-.dueling-boxes-row {
-  height: 40vh;
-  margin: 2.5vh 0;
-}
-
-.skill {
-  margin: 0;
-}
-
-.skill-row {
-  font-size: 3vh;
-}
-
-.portfolio-scroll {
-  margin: auto;
-  height: 50vh;
-  overflow-y: scroll;
-  background-color: #f2f2f2;
-}
-
-.splash-header {
-  height: 10vh;
-  margin-top: 5vh;
-}
-
-.splash-header > h1 {
-  font-family: Roboto;
-  text-align: center;
-  font-weight: normal;
-}
-
-.splash-header > hr {
-  height: 1.5px;
-  background-color: #bbbbbb;
-  margin: 2vh 10vw;
-}
-
-.my-photo {
-  width: 30vw;
-  height: 30vw;
-  margin-top: 10vh;
-  margin-left: 35%;
-  overflow: hidden;
+/*Welcome Page*/
+#welcome {
+  background-color: #e8e8e8;
 }
 
 .carousel-container {
@@ -135,6 +96,39 @@ body {
   height: 100%;
 }
 
+.heading-text-carousel {
+  font-family: roboto;
+  font-style: normal;
+  font-size: 4vw;
+  margin: 5vh 0px;
+}
+
+.body-text-carousel {
+  font-size: 1.5vw;
+  margin: 2vw 1vw;
+  font-family: Maven Pro;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  height: 80vh;
+}
+/*Skills & Experience*/
+#skills {
+  background-color: #ffffff;
+}
+
+.experience-row {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 2.8vh;
+}
+
+.experience-row > div > p {
+  text-align: center;
+  margin: 0 1vw;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
 #skills > div.col {
   background-color: #ffffff;
   width: 100vw;
@@ -143,11 +137,31 @@ body {
   font-family: roboto;
 }
 
+.dueling-boxes {
+  background-color: #f2f2f2;
+  padding: 0vh 1vw;
+  height: 40vh;
+  margin: 1.25vh 0;
+}
+
+.dueling-boxes-row {
+  height: 40vh;
+  margin: 2.5vh 0;
+}
+
 .dueling-boxes > h1 {
   font-size: 5vh;
   margin-bottom: 3vh;
 }
 
+.skill {
+  margin: 0;
+}
+
+.skill-row {
+  font-size: 3vh;
+}
+/*Portfolio Page*/
 #portfolio {
   background-color: #f2f2f2;
   padding: 5vh 10vw;
@@ -166,6 +180,13 @@ body {
   font-size: 7vh;
 }
 
+.portfolio-scroll {
+  margin: auto;
+  height: 50vh;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+}
+
 .figure-caption {
   font-size: 25px;
 }
@@ -173,12 +194,3 @@ body {
 .figure-img {
   height: 25vh;
 }
-
-#welcome {
-  background-color: #e8e8e8;
-}
-
-#skills {
-  background-color: #ffffff;
-}
-
