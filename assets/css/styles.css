@@ -2,6 +2,8 @@
 
 body {
   overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -15,6 +17,7 @@ body {
   max-width: 100%;
   width: 100vw;
   margin: 0;
+  padding: 0 10vw;
 }
 
 /* Splash Rules */
@@ -22,25 +25,46 @@ body {
 .my-photo {
   width: 60vw;
   height: 60vw;
-  margin: 10vh 20vw;
+  margin: 10vh 10vw;
   overflow: hidden;
 }
 
 .my-photo > img {
-  width: 100vw;
+  width: 160vw;
   height: auto;
   position: relative;
-  animation: photoBob 8s;
-  left: -17.5vw;
-  top: -45vw;
+  animation: photoBob-small 8s;
+  left: -45.5vw;
+  top: -100vw;
 }
 
-@keyframes photoBob {
+@media (min-width: 768px) {
+  .my-photo {
+    width: 30vw;
+    height: 30vw;
+    margin-top: 10vh;
+    margin-left: 30%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-photo > img {
+    width: 80vw;
+    height: auto;
+    position: relative;
+    animation: photoBob-large 8s;
+    left: -17.5vw;
+    top: -53vw;
+  }
+}
+
+@keyframes photoBob-small {
   0% {
-    transform: scale3d(0.45, 0.45, 1) translate3d(-20vw, 40vw, 0);
+    transform: scale3d(0.45, 0.45, 1) translate3d(-25vw, 40vw, 0);
   }
   40% {
-    transform: scale3d(0.45, 0.45, 1) translate3d(-20vw, 40vw, 0);
+    transform: scale3d(0.45, 0.45, 1) translate3d(-25vw, 40vw, 0);
     opacity: 1;
   }
   85% {
@@ -53,28 +77,9 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .my-photo {
-    width: 30vw;
-    height: 30vw;
-    margin-top: 10vh;
-    margin-left: 35%;
-    overflow: hidden;
-  }
-}
-
-.my-photo > img {
-  width: 80vw;
-  height: auto;
-  position: relative;
-  animation: photoBob 8s;
-  left: -17.5vw;
-  top: -53vw;
-}
-
-@keyframes photoBob {
+@keyframes photoBob-large {
   0% {
-    transform: scale3d(0.45, 0.45,1) translate3d(-20vw, 40vw, 0);
+    transform: scale3d(0.45, 0.45, 1) translate3d(-20vw, 40vw, 0);
   }
   40% {
     transform: scale3d(0.45, 0.45, 1) translate3d(-20vw, 40vw, 0);
@@ -117,7 +122,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  padding: 9vh 10vw;
+  padding: 9vh 0;
 }
 
 .carousel-container > div.row {
@@ -143,10 +148,52 @@ body {
   font-size: 2.5rem;
 }
 
+@media (min-width:600px) {
+  .heading-text-carousel {
+    font-family: roboto;
+    font-style: normal;
+    font-size: 3rem;
+  }
+}
+
 .body-text-carousel {
   font-size: .85rem;
-  margin: 2vw 1vw;
+  margin: 1.8vh 1vw;
   font-family: Maven Pro;
+}
+
+@media (min-height: 800px) and (min-width:350px) {
+  .body-text-carousel {
+    font-size: 1rem;
+    margin: 1.5vh 1vw;
+    font-family: Maven Pro;
+  }
+}
+
+@media (min-height: 600px) and (min-width:400px) {
+  .body-text-carousel {
+    font-size: 1rem;
+    margin: 1.5vh 1vw;
+    font-family: Maven Pro;
+  }
+}
+
+@media (min-height: 700px) and (min-width:900px) {
+  .body-text-carousel {
+    font-size: 2rem;
+    margin: 1.5vh 1vw;
+    font-family: Maven Pro;
+  }
+}
+
+.body-text-hide-sm {
+  display: none;
+}
+
+@media (min-height: 600px) and (min-width: 600px) {
+  .body-text-hide-sm {
+    display: inline-block;
+  }
 }
 
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
@@ -159,7 +206,7 @@ body {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  padding: 5vh 10vw;
+  padding: 5vh 0;
   font-family: roboto;
 }
 
@@ -224,7 +271,8 @@ body {
 
 #portfolio {
   background-color: #f2f2f2;
-  padding: 5vh 10vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   border-color: transparent;
   font-family: roboto;
 }
@@ -258,5 +306,9 @@ body {
   font-size: 10vh;
   text-align: center;
   color: black;
+}
+
+.img-fluid.figure-img {
+  max-height: 25vh;
 }
 

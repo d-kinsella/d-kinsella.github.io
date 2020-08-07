@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>mobile-first</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -26,7 +28,7 @@
                 <div class="border rounded-circle my-photo"><img id="myPhoto" src="assets/img/Self%20Photo.png" /></div>
             </div>
         </div>
-        <div class="row" id="welcome">
+        <div class="row view-row" id="welcome">
             <div class="col carousel-container">
                 <div class="content" style="background-color: #ffffff;padding: 1vh 2vw;position: relative;overflow-y: hidden;">
                     <div class="carousel slide" data-ride="carousel" id="carousel-1" style="position: relative;z-index: 0;">
@@ -46,13 +48,13 @@
                     <div style="position: absolute;z-index: 50;background-color: rgba(255,255,255,0.85);margin: 0 10vw;margin-top: -65vh;padding: 2vh;height: 50vh;">
                         <h1 class="text-center heading-text-carousel">Hey!</h1>
                         <p class="body-text-carousel">My name is Declan Kinsella and I'm a Computer Engineering student at McMaster University. I have a keen interest in software development and engineering design.&nbsp;</p>
-                        <p class="body-text-carousel"></p>
-                        <p class="body-text-carousel" style="font-family: Maven Pro;">I hope you enjoy browsing this portfolio, feel free to <a href="#Contact">reach out</a> to me if anything you read catches your interest!</p>
+                        <p class="body-text-carousel body-text-hide-sm">A few of my hobbies outside of school include cooking, watch collecting, swimming and breakdancing!<br></p>
+                        <p class="body-text-carousel" style="font-family: Maven Pro;">I hope you enjoy browsing this portfolio, feel free to <a href="#Contact">reach out</a> to me if anything you read catches your interest!<br></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row text-center" id="skills">
+        <div class="row text-center view-row" id="skills">
             <div class="col">
                 <div class="row dueling-boxes-row">
                     <div class="col dueling-boxes">
@@ -141,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center" id="portfolio">
+        <div class="row text-center view-row" id="portfolio">
             <div class="col">
                 <div>
                     <h1>Side Projects</h1>
@@ -149,9 +151,9 @@
                         <div role="tablist" id="accordion-1">
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">Distant Unity<br></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">Distant Unity<br></a></h5>
                                 </div>
-                                <div class="collapse show item-1" role="tabpanel" data-parent="#accordion-1">
+                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
                                     <div class="card-body">
                                         <figure class="figure">
                                             <figcaption class="figure-caption">Distant Unity</figcaption><img class="img-fluid figure-img" src="assets/img/coronavirus.png"></figure>
@@ -213,9 +215,9 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4">Messenger Game Blocker<br></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4">Messenger Game Blocker<br></a></h5>
                                 </div>
-                                <div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
+                                <div class="collapse show item-4" role="tabpanel" data-parent="#accordion-1">
                                     <div class="card-body">
                                         <figure class="figure">
                                             <figcaption class="figure-caption">Messenger Game Blocker</figcaption><img class="img-fluid figure-img" src="assets/img/logo-128.png"></figure>
