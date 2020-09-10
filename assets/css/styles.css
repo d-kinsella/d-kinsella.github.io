@@ -20,6 +20,35 @@ body {
   background-color: #ffffff;
 }
 
+.rounded-shadow {
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 0px rgb(170,170,170);
+}
+
+@media (min-width: 525px) {
+  .boxed-heading {
+    width: 80%;
+  }
+}
+
+@media (max-width: 524px) {
+  .boxed-heading {
+    width: 100%;
+  }
+}
+
+.boxed-heading {
+  background-color: white;
+  margin: 0 auto;
+}
+
+.boxed-heading > h1 {
+  font-size: 6vh;
+  line-height: 9vh;
+  font-family: roboto;
+  font-weight: bold;
+}
+
 /* Splash Rules */
 
 .my-photo {
@@ -34,7 +63,7 @@ body {
   height: auto;
   position: relative;
   animation: photoBob-small 8s;
-  left: -45.5vw;
+  left: -45.4vw;
   top: -100vw;
 }
 
@@ -54,7 +83,7 @@ body {
     height: auto;
     position: relative;
     animation: photoBob-large 8s;
-    left: -17.5vw;
+    left: -17.4vw;
     top: -53vw;
   }
 }
@@ -119,24 +148,15 @@ body {
   padding: 0;
 }
 
+@media (min-width: 1200px) {
+  .carousel-container {
+    width: 80vw;
+  }
+}
+
 .carousel-container {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 9vh 0;
-}
-
-.carousel-container > div.row {
-  margin: 0 10%;
-}
-
-.carousel-container > div.row > div.col {
-  padding: 0vh 0vw;
-  max-height: 80vh;
-}
-
-.carousel-container > div.row > div.col > div.content {
-  margin: 2vh 0;
+  padding: 0;
+  margin: 5vh auto;
 }
 
 .carousel > div > div > img {
@@ -144,15 +164,15 @@ body {
   height: 100%;
 }
 
-@media (min-width: 1024px) and (max-width: 2924px) {
+@media (min-width: 1684px) and (max-width: 2924px) {
   .heading-text-carousel {
     font-family: roboto;
     font-weight: bold;
-    font-size: 3.3rem;
+    font-size: 3.7rem;
   }
 }
 
-@media (min-width: 900px) and (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1684px) {
   .heading-text-carousel {
     font-family: roboto;
     font-weight: bold;
@@ -176,7 +196,7 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1820px) {
   .body-text-carousel {
     font-size: 1.4rem;
     margin: 1.8vh 0;
@@ -184,7 +204,15 @@ body {
   }
 }
 
-@media (min-width: 525px) and (max-width: 900px) {
+@media (min-width: 1689px) and (max-width: 1820px) {
+  .body-text-carousel {
+    font-size: 1.3rem;
+    margin: 1.8vh 0;
+    font-family: Maven Pro;
+  }
+}
+
+@media screen and (min-width: 525px) and (max-width: 1689px) {
   .body-text-carousel {
     font-size: 1.1rem;
     margin: 1.8vh 0;
@@ -192,12 +220,58 @@ body {
   }
 }
 
-.body-text-hide-sm {
-  display: none;
-}
-
 #carousel-2 > .carousel-inner > .carousel-item {
   height: 90vh;
+}
+
+
+
+@media (min-width: 900px) and (min-height:700) {
+  .intro-blurb {
+    width: 40%;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .intro-blurb {
+    width: 60%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 662px) and (max-width: 900px) {
+  .intro-blurb {
+    width: 60%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 462px) and (max-width: 662px) {
+  .intro-blurb {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 461px) {
+  .intro-blurb {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+.intro-blurb {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  margin-top: -45vh;
+  transform: translateY(-50%);
+  padding: 0 5vw;
+  border-radius: 15px;
 }
 
 /* Skills and Experiences Rules */
@@ -215,26 +289,51 @@ body {
   margin: 1.5vh 0;
 }
 
-#portfolio > .col > .row > .col {
-  /*background-color: white;*/
-  padding: 0vh 1vw;
-  overflow-y: hidden;
+#carousel-1 > div > .carousel-item {
+  height: 25vh;
+  background-color: #EEE;
+}
+
+.carousel-item > p {
+  font-size: 5vh;
+  line-height: 25vh;
+}
+
+.heading-text-carousel {
+  font-family: roboto;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 525px) {
+  .body-text-carousel {
+    font-size: 1rem;
+    margin: 1.8vh 0;
+    font-family: Maven Pro;
+  }
+}
+
+@media (min-width: 525px) {
+  .skill-content-box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 525px) {
+  .skill-content-box {
+    width: 80%;
+  }
+}
+
+.skill-carousel {
+  margin: auto;
+  margin-top: 2.5vh;
+  height: 25vh;
+  overflow: hidden;
 }
 
 .dueling-boxes-row {
   height: 40vh;
   padding: 3.25vh;
-}
-
-.skill-row > .col > p {
-  margin: auto 5px;
-  padding: 2px;
-  box-shadow: 0px 1px 2px 0px rgb(170,170,170);
-}
-
-.skill-row {
-  margin: 1vh auto;
-  font-size: 2.6vh;
 }
 
 #skills {
@@ -244,7 +343,6 @@ body {
 .experience-row {
   margin: 1vh 0;
   font-size: 2.8vh;
-  box-shadow: 0px 1px 2px 0px rgb(170,170,170);
 }
 
 .experience-row > div > p {
@@ -287,19 +385,15 @@ body {
 
 #portfolio {
   background-color: #f2f2f2;
-  padding: 2.5vh 0;
+  padding: 2.5vh 1vw;
   border-color: transparent;
   font-family: roboto;
+  overflow-y: hidden;
 }
 
 #portfolio > div > div {
   margin: 0;
   height: 80vh;
-  /*background-color: #ffffff;*/
-}
-
-#portfolio > div > div > h1 {
-  font-size: 7vh;
 }
 
 .figure-caption {
@@ -322,119 +416,6 @@ body {
   .card {
     font-size: 1.3rem;
   }
-}
-
-/* Contact Footer */
-
-#contact {
-  height: 20vh;
-}
-
-#contact > div.col > div.row > div.col > a {
-  font-size: 10vh;
-  text-align: center;
-  color: black;
-  line-height: 10vh;
-}
-
-.img-fluid.figure-img {
-  max-height: 25vh;
-}
-
-.intro-blurb {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  height: 300px;
-  z-index: 1;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.85);
-  margin: auto;
-  margin-top: -45vh;
-  transform: translateY(-50%);
-  padding: 0 5vw;
-  border-radius: 15px;
-}
-
-.skill-row > .col {
-  width: 35vw;
-  padding: 0px 5px;
-}
-
-@media (min-width: 525px) {
-  .boxed-heading {
-    width: 80%;
-  }
-}
-
-@media (max-width: 525px) {
-  .boxed-heading {
-    width: 100%;
-  }
-}
-
-.boxed-heading {
-  background-color: white;
-  margin: 0 auto;
-}
-
-skill-heading > h1 {
-  height: 8vh;
-  line-height: 8vh;
-}
-
-#carousel-1 > div > .carousel-item {
-  height: 25vh;
-  background-color: #EEE;
-}
-
-.boxed-heading > h1 {
-  font-size: 6vh;
-  line-height: 9vh;
-  font-family: roboto;
-  font-weight: bold;
-}
-
-.carousel-item > p {
-  font-size: 5vh;
-  line-height: 25vh;
-}
-
-.rounded-shadow {
-  border-radius: 15px;
-  box-shadow: 0px 1px 2px 0px rgb(170,170,170);
-}
-
-.heading-text-carousel {
-  font-family: roboto;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 525px) {
-  .body-text-carousel {
-    font-size: .9rem;
-    margin: 1.8vh 0;
-    font-family: Maven Pro;
-  }
-}
-
-@media (min-width: 525px) {
-  .skill-content-box {
-    width: 60%;
-  }
-}
-
-@media (max-width: 525px) {
-  .skill-content-box {
-    width: 80%;
-  }
-}
-
-.skill-carousel {
-  margin: auto;
-  margin-top: 2.5vh;
-  height: 25vh;
-  overflow: hidden;
 }
 
 @media (max-width: 900px) {
@@ -461,6 +442,23 @@ skill-heading > h1 {
   transition: background-color .5s;
 }
 
+.img-fluid.figure-img {
+  max-height: 25vh;
+}
+
+/* Contact Footer */
+
+#contact {
+  height: 20vh;
+}
+
+#contact > div.col > div.row > div.col > a {
+  font-size: 10vh;
+  text-align: center;
+  color: black;
+  line-height: 10vh;
+}
+
 .with-love {
   margin: 0;
   font-size: 2vh;
@@ -470,4 +468,3 @@ skill-heading > h1 {
   bottom: 1vh;
   opacity: 50%;
 }
-
