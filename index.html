@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>mobile-first</title>
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -16,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class=".global-container">
         <div class="row view-row" id="splash" style="background-color: #ffffff;">
             <div class="col" style="min-width: 100%;padding: 0;">
                 <div class="container">
@@ -29,27 +27,29 @@
             </div>
         </div>
         <div class="row view-row" id="welcome">
-            <div class="col carousel-container">
-                <div class="content" style="background-color: #ffffff;padding: 1vh 2vw;position: relative;overflow-y: hidden;">
-                    <div class="carousel slide" data-ride="carousel" id="carousel-1" style="position: relative;z-index: 0;">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/Vanilla_Technicolor_Phantom.png" alt="Slide Image"></div>
-                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Sky_Skeleton.png" alt="Slide Image"></div>
-                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Mr._Wickles.png" alt="Slide Image"></div>
+            <div class="col" style="padding: 0;margin: 5vh 0;">
+                <div>
+                    <div class="carousel slide" data-ride="carousel" id="carousel-2">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/kamasu.png"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/Seiko%20Turtle.svg.png"></div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="assets/img/SNK803%20Vector.png"></div>
                         </div>
-                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button"
+                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button"
                                 data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-1" data-slide-to="1"></li>
-                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-2" data-slide-to="2"></li>
                         </ol>
                     </div>
-                    <div style="position: absolute;z-index: 50;background-color: rgba(255,255,255,0.85);margin: 0 10vw;margin-top: -65vh;padding: 2vh;height: 50vh;">
-                        <h1 class="text-center heading-text-carousel">Hey!</h1>
-                        <p class="body-text-carousel">My name is Declan Kinsella and I'm a Computer Engineering student at McMaster University. I have a keen interest in software development and engineering design.&nbsp;</p>
-                        <p class="body-text-carousel body-text-hide-sm">A few of my hobbies outside of school include cooking, watch collecting, swimming and breakdancing!<br></p>
-                        <p class="body-text-carousel" style="font-family: Maven Pro;">I hope you enjoy browsing this portfolio, feel free to <a href="#Contact">reach out</a> to me if anything you read catches your interest!<br></p>
+                    <div class="intro-blurb">
+                        <div>
+                            <h1 class="text-center heading-text-carousel">Hey!</h1>
+                            <p class="body-text-carousel">My name is Declan Kinsella and I'm a Computer Engineering student at McMaster University. I have a keen interest in software development and engineering design.&nbsp;</p>
+                            <p class="body-text-carousel body-text-hide-sm">A few of my hobbies outside of school include cooking, watch collecting, swimming and breakdancing!<br></p>
+                            <p class="body-text-carousel">I hope you enjoy browsing this portfolio, feel free to <a href="#Contact">reach out</a> to me if anything you read catches your interest!<br></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,84 +58,82 @@
             <div class="col">
                 <div class="row dueling-boxes-row">
                     <div class="col dueling-boxes">
-                        <h1>My Skills</h1>
-                        <div class="row skill-row">
-                            <div class="col">
-                                <p class="skill"><i class="fab fa-python"></i>&nbsp;Python</p>
-                            </div>
-                            <div class="col">
-                                <p class="skill"><i class="fab fa-java"></i>&nbsp;Java</p>
-                            </div>
+                        <div class="boxed-heading rounded-shadow">
+                            <h1>Skills</h1>
                         </div>
-                        <div class="row skill-row">
-                            <div class="col">
-                                <p class="skill"><i class="fab fa-node-js"></i>&nbsp;Node</p>
+                        <div class="carousel slide rounded-shadow skill-content-box skill-carousel" data-ride="carousel" id="carousel-1" data-interval="1200">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active skill-carousel">
+                                    <p><i class="fab fa-python"></i>&nbsp;Python</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p><i class="fab fa-java"></i>&nbsp;Java</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p><i class="fab fa-node-js"></i>&nbsp;Node</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p><i class="fab fa-react"></i>&nbsp;React</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="skill"><i class="fab fa-html5"></i>&nbsp;HTML</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="skill"><i class="fab fa-css3-alt"></i>&nbsp;CSS</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="skill"><i class="fab fa-js"></i>&nbsp;Javascript</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="skill"><i class="fa fa-file-text"></i>&nbsp;C</p>
+                                </div>
                             </div>
-                            <div class="col">
-                                <p class="skill"><i class="fab fa-react"></i>&nbsp;React</p>
-                            </div>
-                        </div>
-                        <div class="row skill-row">
-                            <div class="col">
-                                <p class="skill"><i class="fab fa-html5"></i>&nbsp;HTML</p>
-                            </div>
-                            <div class="col">
-                                <p class="skill"><i class="fab fa-css3-alt"></i>&nbsp;CSS</p>
-                            </div>
-                        </div>
-                        <div class="row skill-row">
-                            <div class="col">
-                                <p class="skill"><i class="fas fa-cogs"></i>&nbsp;Assembly</p>
-                            </div>
-                            <div class="col">
-                                <p class="skill"><i class="fa fa-sitemap"></i>&nbsp;Verilog</p>
-                            </div>
-                        </div>
-                        <div class="row skill-row">
-                            <div class="col">
-                                <p class="skill"><i class="fab fa-js"></i>&nbsp;Javascript</p>
-                            </div>
-                            <div class="col">
-                                <p class="skill"><i class="fa fa-table"></i>&nbsp;SQL</p>
-                            </div>
-                        </div>
-                        <div class="row skill-row">
-                            <div class="col">
-                                <p class="skill"><i class="fas fa-database"></i>&nbsp;Mongodb</p>
-                            </div>
-                            <div class="col">
-                                <p class="skill"><i class="fa fa-file-text"></i>&nbsp;C</p>
-                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1"
+                                    role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-1" data-slide-to="2"></li>
+                                <li data-target="#carousel-1" data-slide-to="3"></li>
+                                <li data-target="#carousel-1" data-slide-to="4"></li>
+                                <li data-target="#carousel-1" data-slide-to="5"></li>
+                                <li data-target="#carousel-1" data-slide-to="6"></li>
+                                <li data-target="#carousel-1" data-slide-to="7"></li>
+                            </ol>
                         </div>
                     </div>
                 </div>
                 <div class="row dueling-boxes-row">
                     <div class="col dueling-boxes">
-                        <h1>My Experience</h1>
-                        <div class="experience-scroll">
-                            <div class="row experience-row">
-                                <div class="col">
-                                    <p><strong>IBM</strong><br><em>Backend Cloud Developer, Summer 2020</em></p>
+                        <div class="boxed-heading rounded-shadow">
+                            <h1>Experience</h1>
+                        </div>
+                        <div class="skill-content-box experience-scroll rounded-shadow">
+                            <div class="col">
+                                <div class="row experience-row">
+                                    <div class="col">
+                                        <p><strong>IBM</strong><br><em>Backend Cloud Developer</em><br><em>Summer 2020</em></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row experience-row">
-                                <div class="col" style="text-align: center;">
-                                    <p><strong>IBM Internhack </strong><br><em>Participant, July 2020</em></p>
+                                <div class="row experience-row">
+                                    <div class="col" style="text-align: center;">
+                                        <p><strong>IBM Internhack </strong><br><em>Participant</em><br><em>July 2020</em></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row experience-row">
-                                <div class="col" style="text-align: center;">
-                                    <p><strong>Deltahacks VI</strong><br><em>Participant, January 2020</em></p>
+                                <div class="row experience-row">
+                                    <div class="col" style="text-align: center;">
+                                        <p><strong>Deltahacks VI</strong><br><em>Participant</em><br><em>January 2020</em></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row experience-row">
-                                <div class="col">
-                                    <p><strong>Hack The North</strong><br><em>Participant, September 2019</em></p>
+                                <div class="row experience-row">
+                                    <div class="col">
+                                        <p><strong>Hack The North</strong><br><em>Participant</em><br><em>September 2019</em></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row experience-row">
-                                <div class="col" style="text-align: center;">
-                                    <p><strong>Deltahacks V</strong><br><em>Participant, February&nbsp;2019</em></p>
+                                <div class="row experience-row">
+                                    <div class="col" style="text-align: center;">
+                                        <p><strong>Deltahacks V</strong><br><em>Participant</em><br><em>February&nbsp;2019</em></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -144,80 +142,84 @@
             </div>
         </div>
         <div class="row text-center view-row" id="portfolio">
-            <div class="col">
-                <div>
-                    <h1>Side Projects</h1>
-                    <div class="portfolio-scroll">
-                        <div role="tablist" id="accordion-1">
-                            <div class="card">
-                                <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">Distant Unity<br></a></h5>
-                                </div>
-                                <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        <figure class="figure">
-                                            <figcaption class="figure-caption">Distant Unity</figcaption><img class="img-fluid figure-img" src="assets/img/coronavirus.png"></figure>
-                                        <p class="card-text text-left">Distant Unity was a hackathon project for the internal IBM internhack 2020. It is a basic social network designed to help incoming first year university students meet and network with their peers and upperclassmen
-                                            in ways they won't be able to as a result of the conditions imposed by the covid-19 pandemic.&nbsp;<br><br>The app was written in pure HTML/CSS on the front end, with a flask backend and a PostgreSQL database
-                                            supporting it. The app was deployed using IBMCloud's cloud-foundry service, and the PostgreSQL database was likewise hosted on IBMCloud.</p>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p>No github available (hosted on enterprise servers)</p>
+            <div class="col" style="padding: 0 1vw;">
+                <div class="row">
+                    <div class="col dueling-boxes">
+                        <div class="boxed-heading rounded-shadow">
+                            <h1>Side Projects</h1>
+                        </div>
+                        <div class="portfolio-scroll rounded-shadow">
+                            <div role="tablist" id="accordion-2">
+                                <div class="card">
+                                    <div class="card-header" role="tab">
+                                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-1" href="#accordion-2 .item-1">Distant Unity<br></a></h5>
+                                    </div>
+                                    <div class="collapse item-1" role="tabpanel" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            <figure class="figure">
+                                                <figcaption class="figure-caption">Distant Unity</figcaption><img class="img-fluid figure-img" src="assets/img/coronavirus.png"></figure>
+                                            <p class="card-text text-left">Distant Unity was a hackathon project for the internal IBM internhack 2020. It is a basic social network designed to help incoming first year university students meet and network with their peers and upperclassmen
+                                                in ways they won't be able to as a result of the conditions imposed by the covid-19 pandemic.&nbsp;<br><br>The app was written in pure HTML/CSS on the front end, with a flask backend and a PostgreSQL database
+                                                supporting it. The app was deployed using IBMCloud's cloud-foundry service, and the PostgreSQL database was likewise hosted on IBMCloud.</p>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>No github available (hosted on enterprise servers)</p>
+                                                </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab">
+                                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-2 .item-2" href="#accordion-2 .item-2" style="color: rgb(112,112,112);">Date Your Diagnosis<br></a></h5>
+                                    </div>
+                                    <div class="collapse show item-2" role="tabpanel" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            <figure class="figure">
+                                                <figcaption class="figure-caption">Date Your Diagnosis</figcaption><img class="img-fluid figure-img" src="assets/img/coronavirus.png"></figure>
+                                            <p class="card-text text-left">Diagnostic Dating was a hackathon project for Deltahacks V. The project is a React Native app that allowed users to self-triage themselves be swiping left or right on symptoms to narrow down on what ailment
+                                                the user is likely suffering from.<br><br>The front end is written as a React Native app that makes API calls to a Ruby-based backend, supported by a PostgreSQL database and deployed on heroku.</p>
+                                            <div class="row">
+                                                <div class="col" style="padding: 0;">
+                                                    <p><a href="https://github.com/amxh/diagnostic-dating-app">Github</a>&nbsp;<br>(Fontend)</p>
+                                                </div>
+                                                <div class="col" style="padding: 0;">
+                                                    <p><a href="https://github.com/cynicalpillow/deltahacks-backend">Github</a>&nbsp;<br>(Backend)</p>
+                                                </div>
+                                                <div class="col" style="padding: 0;">
+                                                    <p><a href="https://devpost.com/software/diagnostic-dating">Devpost</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab">
+                                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-3" href="#accordion-2 .item-3">Mr. Pill<br></a></h5>
+                                    </div>
+                                    <div class="collapse item-3" role="tabpanel" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            <figure class="figure">
+                                                <figcaption class="figure-caption">Mr. Pill<br></figcaption><img class="img-fluid figure-img" src="assets/img/Mr%20Pill.png"></figure>
+                                            <p class="card-text text-left">Mr. Pill was a hackathon project for Hack the North 2019. The project designed as a RESTFUL MERN app which would interface with a Google Home Mini through the Voiceflow API.<br> The user would tell their IOT
+                                                device when they were taking their medication, and their service provider would get an update on the administrator webpage on how far through their prescription the patient has progressed.<br><br></p>
+                                            <div
+                                                class="row">
+                                                <div class="col">
+                                                    <p><a href="https://github.com/cynicalpillow/prescription-assistant">Github</a></p>
+                                                </div>
+                                                <div class="col">
+                                                    <p><a href="https://devpost.com/software/hack-the-north-2019">Devpost</a></p>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-2" href="#accordion-1 .item-2">Date Your Diagnosis<br></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-4" href="#accordion-2 .item-4">Messenger Game Blocker<br></a></h5>
                                 </div>
-                                <div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        <figure class="figure">
-                                            <figcaption class="figure-caption">Date Your Diagnosis</figcaption><img class="img-fluid figure-img" src="assets/img/coronavirus.png"></figure>
-                                        <p class="card-text text-left">Diagnostic Dating was a hackathon project for Deltahacks V. The project is a React Native app that allowed users to self-triage themselves be swiping left or right on symptoms to narrow down on what ailment the
-                                            user is likely suffering from.<br><br>The front end is written as a React Native app that makes API calls to a Ruby-based backend, supported by a PostgreSQL database and deployed on heroku.</p>
-                                        <div class="row">
-                                            <div class="col" style="padding: 0;">
-                                                <p><a href="https://github.com/amxh/diagnostic-dating-app">Github</a>&nbsp;<br>(Fontend)</p>
-                                            </div>
-                                            <div class="col" style="padding: 0;">
-                                                <p><a href="https://github.com/cynicalpillow/deltahacks-backend">Github</a>&nbsp;<br>(Backend)</p>
-                                            </div>
-                                            <div class="col" style="padding: 0;">
-                                                <p><a href="https://devpost.com/software/diagnostic-dating">Devpost</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-3" href="#accordion-1 .item-3">Mr. Pill<br></a></h5>
-                                </div>
-                                <div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
-                                    <div class="card-body">
-                                        <figure class="figure">
-                                            <figcaption class="figure-caption">Mr. Pill<br></figcaption><img class="img-fluid figure-img" src="assets/img/Mr%20Pill.png"></figure>
-                                        <p class="card-text text-left">Mr. Pill was a hackathon project for Hack the North 2019. The project designed as a RESTFUL MERN app which would interface with a Google Home Mini through the Voiceflow API.<br> The user would tell their IOT device
-                                            when they were taking their medication, and their service provider would get an update on the administrator webpage on how far through their prescription the patient has progressed.<br><br></p>
-                                        <div class="row">
-                                            <div class="col">
-                                                <p><a href="https://github.com/cynicalpillow/prescription-assistant">Github</a></p>
-                                            </div>
-                                            <div class="col">
-                                                <p><a href="https://devpost.com/software/hack-the-north-2019">Devpost</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="true" aria-controls="accordion-1 .item-4" href="#accordion-1 .item-4">Messenger Game Blocker<br></a></h5>
-                                </div>
-                                <div class="collapse show item-4" role="tabpanel" data-parent="#accordion-1">
+                                <div class="collapse item-4" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <figure class="figure">
                                             <figcaption class="figure-caption">Messenger Game Blocker</figcaption><img class="img-fluid figure-img" src="assets/img/logo-128.png"></figure>
@@ -235,11 +237,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" data-toggle="collapse">
                                 <div class="card-header" role="tab">
-                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-5" href="#accordion-1 .item-5">Song To Pinyin<br></a></h5>
+                                    <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-2 .item-5" href="#accordion-2 .item-5">Song To Pinyin<br></a></h5>
                                 </div>
-                                <div class="collapse item-5" role="tabpanel" data-parent="#accordion-1">
+                                <div class="collapse item-5" role="tabpanel" data-parent="#accordion-2">
                                     <div class="card-body">
                                         <figure class="figure">
                                             <figcaption class="figure-caption">Song To Pinyin</figcaption><img class="img-fluid figure-img" src="assets/img/Song-to-pinyin.png"></figure>
@@ -258,18 +260,18 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center" id="Contact">
-            <div class="col" style="background-color: #ffffff;">
-                <div style="margin: 2vh;">
-                    <p style="margin: 0;">Find Me In Other Places!</p>
-                    <div class="row" style="padding: 0 5vw;">
-                        <div class="col"><a href="https://www.linkedin.com/in/declankinsella/"><i class="fa fa-linkedin-square"></i></a></div>
-                        <div class="col"><a href="mailto:declankinsella2000@gmail.com"><i class="fa fa-envelope"></i></a></div>
-                        <div class="col"><a href="www.github.com/d-kinsella"><i class="fa fa-github-square"></i></a></div>
-                    </div>
-                </div>
+    </div>
+    <div class="row text-center view-row" id="contact">
+        <div class="col" style="background-color: #ffffff;">
+            <p style="margin: 0;margin-top: 1vh;">Find Me In Other Places!</p>
+            <div class="row" style="padding: 0;margin: auto;width: 100%;">
+                <div class="col"><a href="https://www.linkedin.com/in/declankinsella/"><i class="fa fa-linkedin-square"></i></a></div>
+                <div class="col"><a href="mailto:declankinsella2000@gmail.com"><i class="fa fa-envelope"></i></a></div>
+                <div class="col"><a href="http://www.github.com/d-kinsella"><i class="fa fa-github-square"></i></a></div>
             </div>
+            <p class="with-love">Website made by Declan Kinsella with 💖<br></p>
         </div>
+    </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
