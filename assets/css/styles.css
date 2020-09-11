@@ -72,15 +72,28 @@ body {
   height: 60vw;
   margin: 10vh auto;
   overflow: hidden;
+  position: relative;
 }
 
-.my-photo > img {
-  width: 160vw;
-  height: auto;
-  position: relative;
-  animation: photoBob-small 8s;
-  left: -45.4vw;
-  top: -100vw;
+@media (max-width: 768px) {
+  .my-photo > div > img.animated{
+    width: 160vw;
+    height: auto;
+    animation: photoBob-small 8s;
+    position: relative;
+    left: -45.4vw;
+    top: -100vw;
+    z-index: 2;
+    opacity: 0;
+  }
+  .my-photo > div > img.still {
+    width: 160vw;
+    height: auto;
+    position: absolute;
+    left: -45.4vw;
+    top: -100vw;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -88,55 +101,88 @@ body {
     width: 30vw;
     height: 30vw;
     margin: 10vh auto;
-    /*margin-left: 30%;*/
     overflow: hidden;
+    position: relative;
   }
 }
 
 @media (min-width: 768px) {
-  .my-photo > img {
+  .my-photo > div > img.animated {
     width: 80vw;
     height: auto;
     position: relative;
     animation: photoBob-large 8s;
     left: -17.4vw;
     top: -53vw;
+    opacity: 0;
+    z-index: 1;
   }
+
+  .my-photo > div > img.still {
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    left: -17.4vw;
+    top: -53vw;
+    z-index: 0;
+  }
+  
 }
 
 @keyframes photoBob-small {
+  from{
+    opacity: 1;
+  }
   0% {
     transform: scale3d(0.45, 0.45, 1) translate3d(-25vw, 40vw, 0);
+    opacity: 1;
   }
   40% {
     transform: scale3d(0.45, 0.45, 1) translate3d(-25vw, 40vw, 0);
     opacity: 1;
   }
-  85% {
+  75% {
     transform: scale3d(.8, .8, 1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  90% {
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     opacity: 1;
   }
   100% {
     transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     opacity: 1;
+  }
+  to{
+    opacity: 0;
   }
 }
 
 @keyframes photoBob-large {
+  from{
+    opacity: 1;
+  }
   0% {
     transform: scale3d(0.45, 0.45, 1) translate3d(-20vw, 40vw, 0);
   }
-  40% {
+  30% {
     transform: scale3d(0.45, 0.45, 1) translate3d(-20vw, 40vw, 0);
     opacity: 1;
   }
-  85% {
+  70% {
     transform: scale3d(.8, .8, 1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     opacity: 1;
   }
   100% {
     transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
     opacity: 1;
+  }
+  to{
+    opacity: 0;
   }
 }
 
