@@ -79,13 +79,16 @@ body {
   .my-photo > div > img.animated{
     width: 160vw;
     height: auto;
-    animation: photoBob-small 8s;
+    animation: photoBob-small 9s;
     position: relative;
     left: -45.4vw;
     top: -100vw;
     z-index: 2;
     opacity: 0;
   }
+}
+
+@media (max-width: 768px) {
   .my-photo > div > img.still {
     width: 160vw;
     height: auto;
@@ -111,13 +114,15 @@ body {
     width: 80vw;
     height: auto;
     position: relative;
-    animation: photoBob-large 8s;
+    animation: photoBob-large 9s;
     left: -17.4vw;
     top: -53vw;
     opacity: 0;
     z-index: 1;
   }
+}
 
+@media (min-width: 768px) {
   .my-photo > div > img.still {
     width: 80vw;
     height: auto;
