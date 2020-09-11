@@ -370,7 +370,7 @@ body {
 
 .dueling-boxes-row {
   height: 40vh;
-  padding: 3.25vh;
+  padding: 1.25vh;
 }
 
 #skills {
@@ -379,7 +379,7 @@ body {
 }
 
 .experience-row {
-  margin: 2vh 0 1vh 0;
+  margin: 1vh 0;
   font-size: 2.8vh;
 }
 
