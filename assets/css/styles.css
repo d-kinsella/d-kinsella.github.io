@@ -379,7 +379,7 @@ body {
 }
 
 .experience-row {
-  margin: 1vh 0;
+  margin: 2vh 0 1vh 0;
   font-size: 2.8vh;
 }
 
@@ -393,10 +393,9 @@ body {
 .experience-scroll {
   overflow-x: hidden;
   margin: 2.5vh auto;
-  scrollbar-width: thin;
 }
 
-@media (max-width:800){
+@media screen and (max-width:800px){
   .experience-scroll {
     overflow-y: scroll;
     height: 38vh;
@@ -404,7 +403,7 @@ body {
   }
 }
 
-@media(min-width: 800){
+@media(min-width: 800px){
   .experience-scroll {
     overflow-y: show;
     height:auto;
@@ -491,7 +490,7 @@ body {
 }
 
 .card-header:hover {
-  background-color: rgba(211,211,211);
+  background-color: rgba(220,220,220);
 }
 
 .card-header {
